@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  artway-ml:
+    image: rtuitlab/artway-ml
+  artway-ml-test-front:
+    image: rtuitlab/artway-ml-test-front
+    depends_on: 
+      - artway-ml
+  proxy:
+    image: rtuitlab/artway-ml-test-proxy
+    depends_on: 
+      - artway-ml-test-front

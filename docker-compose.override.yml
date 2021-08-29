@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  artway-ml:
+    build: ArtWay-ML
+  artway-ml-test-front:
+    build: ArtWay-ML-Test-Front
+  proxy:
+    build: Proxy
+    ports:
+      - 8080:80

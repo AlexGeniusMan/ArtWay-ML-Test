@@ -1,0 +1,21 @@
+name: build
+
+on:
+  push:
+    branches:    
+      - 'develop'
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Update submodules
+      run: |
+        git submodule init
+        git submodule update
+    - name: Build compose
+      run: |
+        docker-compose -f docker-compose.yml -f ArtWay-ML/docker-compose.yml -f ArtWay-ML/docker-compose.override.yml -f ArtWay-ML-Test-Front/docker-compose.yml -f ArtWay-ML-Test-Front/docker-compose.override.yml -f docker-compose.override.yml build
