@@ -18,4 +18,4 @@ jobs:
         git submodule update
     - name: Build compose
       run: |
-        docker-compose -f .\docker-compose.yml -f .\ArtWay-ML\docker-compose.yml -f .\ArtWay-ML\docker-compose.override.yml -f .\ArtWay-ML-Test-Front\docker-compose.yml -f .\ArtWay-ML-Test-Front\docker-compose.override.yml -f .\docker-compose.override.yml build
+        docker-compose -f /docker-compose.yml -f /ArtWay-ML/docker-compose.yml -f /ArtWay-ML/docker-compose.override.yml -f /ArtWay-ML-Test-Front/docker-compose.yml -f /ArtWay-ML-Test-Fron/docker-compose.override.yml -f /docker-compose.override.yml build
