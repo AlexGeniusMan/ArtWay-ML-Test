@@ -14,24 +14,19 @@
 
 ## Setup
 > By default, service run at `8080` port. To specify it for development, change target port for `proxy` service in `docker-compose.override.yml` file.
-1. Set alias `dev-amt` for work `docker-compose`.
 
-    On Windown (use [`PowerShell`](https://docs.microsoft.com/en-us/powershell/)):
+**1.** Set cmdlet `dev-amt` for work `docker-compose` (use [`PowerShell`](https://docs.microsoft.com/en-us/powershell/)):
+```
+. .\alias.ps1
+```
 
-    ```
-    . .\alias.ps1
-    ```
-    On Linux:
-    ```
-    . ./alias.sh
-    ```
-2. Build and run
-    ```
-    dev-amt build
-    dev-amt up
-    ```
-    or
-    ```
-    dev-amt up --build
-    ```
+**2.** Build and run
+```
+dev-amt build
+dev-amt up
+```
+or
+```
+dev-amt up --build
+```
 :heavy_check_mark: Open `localhost:8080` in browser.
