@@ -1,0 +1,6 @@
+[submodule "ArtWay-ML-Test-Front"]
+	path = ArtWay-ML-Test-Front
+	url = https://github.com/RTUITLab/ArtWay-ML-Test-Front
+[submodule "ArtWay-ML"]
+	path = ArtWay-ML
+	url = https://github.com/RTUITLab/ArtWay-ML
