@@ -15,12 +15,21 @@
 ## Setup
 > By default, service run at `8080` port. To specify it for development, change target port for `proxy` service in `docker-compose.override.yml` file.
 
-**1.** Set cmdlet `dev-amt` for work `docker-compose` (use [`PowerShell`](https://docs.microsoft.com/en-us/powershell/)):
+**1.** Clone the repo:
+```
+git clone https://github.com/RTUITLab/ArtWay-ML-Test amt
+cd amt
+git checkout 3.7
+git submodule init
+git submodule update
+```
+
+**2.** Set cmdlet `dev-amt` for work `docker-compose` (use [`PowerShell`](https://docs.microsoft.com/en-us/powershell/)):
 ```
 . .\alias.ps1
 ```
 
-**2.** Build and run
+**3.** Build and run
 ```
 dev-amt build
 dev-amt up
