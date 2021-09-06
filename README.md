@@ -13,7 +13,7 @@
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 
 ## Setup
-> By default, service run at `8080` port. To specify it for development, change target port for `proxy` service in `docker-compose.override.yml` file.
+> By default, service run at `5555` port. To specify it for development, change target port for `proxy` service in `docker-compose.override.yml` file.
 
 **1.** Clone the repo:
 ```
@@ -43,4 +43,4 @@ or
 ```
 dev-amt up --build
 ```
-:heavy_check_mark: Open `localhost:8080` in browser.
+:heavy_check_mark: Open `localhost:5555` in browser.
