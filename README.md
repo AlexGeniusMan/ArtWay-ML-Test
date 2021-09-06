@@ -25,8 +25,13 @@ git submodule update
 ```
 
 **2.** Set cmdlet `dev-amt` for work `docker-compose` (use [`PowerShell`](https://docs.microsoft.com/en-us/powershell/)):
+on Windows:
 ```
 . .\alias.ps1
+```
+on Linux:
+```
+. ./alias.sh
 ```
 
 **3.** Build and run
